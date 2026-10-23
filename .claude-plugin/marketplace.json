@@ -1,0 +1,15 @@
+{
+  "name": "terminaltax",
+  "description": "Terminal Tax skills for AI assistants.",
+  "owner": {
+    "name": "Terminal Tax LLC",
+    "email": "support@terminal.tax"
+  },
+  "plugins": [
+    {
+      "name": "file-your-taxes",
+      "source": "./",
+      "description": "E-file a 2025 US federal Form 1040 from your assistant: it collects your facts, and you review, sign and file on one Terminal Tax page."
+    }
+  ]
+}

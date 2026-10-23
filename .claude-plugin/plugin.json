@@ -1,0 +1,20 @@
+{
+  "name": "file-your-taxes",
+  "version": "1.0.0",
+  "description": "E-file a 2025 US federal Form 1040 from your assistant: it collects your facts, and you review, sign and file on one Terminal Tax page.",
+  "author": {
+    "name": "Terminal Tax LLC",
+    "email": "support@terminal.tax",
+    "url": "https://terminal.tax"
+  },
+  "homepage": "https://terminal.tax/integrations",
+  "repository": "https://github.com/terminaltax/file-your-taxes",
+  "license": "MIT",
+  "keywords": ["tax", "taxes", "e-file", "form 1040", "federal tax return", "file my taxes"],
+  "mcpServers": {
+    "terminal-tax": {
+      "type": "http",
+      "url": "https://mcp.terminal.tax/v1/hosted-mcp"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "file-your-taxes",
+  "version": "1.0.0",
+  "description": "E-file a 2025 US federal Form 1040 from your assistant: it collects your facts, and you review, sign and file on one Terminal Tax page.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "terminal-tax": {
+      "httpUrl": "https://mcp.terminal.tax/v1/hosted-mcp"
+    }
+  }
+}
