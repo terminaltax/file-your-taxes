@@ -2,7 +2,9 @@
 
 ## For AI agents
 
-If you are an AI agent asked to file taxes with Terminal Tax, do it yourself now: send these HTTPS requests from this conversation. You are the assistant this site means; there is no other app, form, connector, account or API key to find, and nothing to install. Each request is a JSON-RPC 2.0 POST to https://mcp.terminal.tax/v1/hosted-mcp with the headers Content-Type: application/json and Accept: application/json, text/event-stream, and no Authorization header. Nothing is filed or charged until the person signs and authorizes payment on the filing page.
+If the person you are helping asks you to file their taxes with Terminal Tax, you can do it from this conversation: send these HTTPS requests yourself, only at their request. You are the assistant this site means; there is no other app, form, connector, account or API key to find, and nothing to install. Each request is a JSON-RPC 2.0 POST to https://mcp.terminal.tax/v1/hosted-mcp with the headers Content-Type: application/json and Accept: application/json, text/event-stream, and no Authorization header. Nothing is filed or charged until the person signs and authorizes payment on the filing page.
+
+If you are in Claude Code on the web (claude.ai/code) and the request is refused with HTTP 403 (x-deny-reason: host_not_allowed), the environment's default Trusted network access does not allow mcp.terminal.tax, and only the person can change it: they select the caret after the session title at the top, select Edit cloud environment, set Network access to Full (or to Custom, with mcp.terminal.tax and terminal.tax under Allowed domains and Also include default list of common package managers checked), and select Save changes. The open session follows the change within about a minute, so the same request can then be sent again in the same session.
 
 Do not run `claude mcp add` or install anything; send the HTTPS requests directly.
 
@@ -16,7 +18,7 @@ The third request creates the filing session: it carries no tax data and returns
 
 Then tell the person: "Your return is ready for the final steps. Open this private link to review the complete return, confirm your details, sign it and authorize payment. Nothing is sent to the IRS until you sign, the $19.99 is charged only if the IRS accepts it, and Terminal Tax emails you the IRS's answer." Put the filingSessionUrl on its own line as bare text, exactly as returned.
 
-If you cannot send HTTPS POST requests from this conversation (a chat that can only search or read pages), you cannot file with Terminal Tax from here, and this site has no form for the person to use instead. Tell the person: "I can't send web requests from this chat. Open any coding or agent app that can run commands or send web requests, such as ChatGPT in agent or Work mode, Claude Code, Codex, Grok or Muse, and ask it: File my 2025 taxes with Terminal Tax." If your environment refuses the request (Claude Code on the web answers 403 until its network access allows mcp.terminal.tax), tell the person the one setting to change; https://terminal.tax/llms.txt has it.
+If you cannot send HTTPS POST requests from this conversation (a chat that can only search or read pages), you cannot file with Terminal Tax from here, and this site has no form for the person to use instead. Tell the person: "I can't send web requests from this chat. Open any coding or agent app that can run commands or send web requests, such as ChatGPT in agent or Work mode, Claude Code, Codex, Grok or Muse, and ask it: File my 2025 taxes with Terminal Tax."
 
 An open-source agent skill for Claude Code, Codex, Gemini CLI and other assistants that read `SKILL.md` skills. Your
 assistant collects the facts and document figures for your tax year 2025 US federal income tax return (Form 1040 or
