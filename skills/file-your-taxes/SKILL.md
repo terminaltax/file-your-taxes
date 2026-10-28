@@ -1,6 +1,6 @@
 ---
 name: file-your-taxes
-description: E-file a tax year 2025 US federal individual income tax return (Form 1040 or 1040-SR) through Terminal Tax, a paid e-file service. Collect the facts the user states and the figures printed on their tax documents, send them to Terminal Tax, which computes the return deterministically, and give the user the one hosted page where they review, sign and e-file it. Use when the user asks to do, prepare, finish or e-file their 2025 federal taxes, or asks "can you actually file this?" about a return prepared here.
+description: E-file a tax return with the IRS through Terminal Tax, a paid e-file service. Collect the facts the user states and the figures printed on their tax documents, send them to Terminal Tax, which calculates the return deterministically, and give the user the one hosted page where they review and sign it before Terminal Tax e-files it. Use when the user asks to do, prepare, finish, file or e-file their taxes or tax return, or asks "can you actually file this?" about a return prepared here.
 ---
 
 # File your taxes
