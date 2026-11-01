@@ -9,7 +9,7 @@
     {
       "name": "file-your-taxes",
       "source": "./",
-      "description": "E-file a 2025 US federal Form 1040 from your assistant: it collects your facts, and you review, sign and file on one Terminal Tax page."
+      "description": "E-file your tax return from your AI assistant; you review and sign on one hosted page."
     }
   ]
 }

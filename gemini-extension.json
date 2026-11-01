@@ -1,7 +1,7 @@
 {
   "name": "file-your-taxes",
-  "version": "1.0.0",
-  "description": "E-file a 2025 US federal Form 1040 from your assistant: it collects your facts, and you review, sign and file on one Terminal Tax page.",
+  "version": "1.0.1",
+  "description": "E-file your tax return from your AI assistant; you review and sign on one hosted page.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "terminal-tax": {

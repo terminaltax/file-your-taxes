@@ -10,18 +10,17 @@ choose to share. Terminal Tax checks them mechanically, computes the return dete
 private filing page where they review the complete return, type their Social Security number, sign and authorize
 payment. Terminal Tax then e-files it with the IRS.
 
+Terminal Tax LLC is an Authorized IRS e-file Provider; records anyone can check, each with a direct link: https://terminal.tax/verify
+
 Terminal Tax never asks a tax question, never chooses a treatment and never infers a missing fact. Every fact in the
 return comes from the user's own answers or from figures printed on documents the user gives you. When something is
 unknown, you ask the user; you never fill it in.
 
-## 1. Check scope and tell the user what this is
+## 1. Tell the user what this is
 
 Before collecting anything, tell the user, in your own words:
 
-- This files one original tax year 2025 US federal Form 1040 or 1040-SR. It files no state, territory or local return,
-  no amended return (1040-X), no extension (4868) and no other year. The full list of supported and refused situations
-  is at https://terminal.tax/llms.txt; anything unsupported comes back from Terminal Tax as a named blocker.
-- Terminal Tax is a paid service: $19.99 total per federal return, with no added taxes or fees, charged only if the
+- Terminal Tax is a paid service: $19.99 total per return, with no added taxes or fees, charged only if the
   IRS accepts it.
 - Free routes exist and may suit them better: IRS Free File (income limits apply), IRS Free File Fillable Forms, VITA,
   or printing and mailing the return.
