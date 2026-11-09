@@ -1,8 +1,7 @@
 # File your taxes
 
 When the user asks to prepare, finish or e-file their tax return, follow
-[skills/file-your-taxes/SKILL.md](skills/file-your-taxes/SKILL.md). Its helper script is
-`skills/file-your-taxes/scripts/terminal_tax_mcp.py`.
+[skills/file-your-taxes/SKILL.md](skills/file-your-taxes/SKILL.md).
 
 Nothing needs installing, adding or restarting to file: do not run `claude mcp add` or install anything; send the
 HTTPS requests directly. Each request is a JSON-RPC 2.0 POST to `https://mcp.terminal.tax/v1/hosted-mcp` with the

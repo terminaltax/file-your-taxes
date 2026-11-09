@@ -52,8 +52,7 @@ gemini extensions install https://github.com/terminaltax/file-your-taxes
 ```
 
 Any other assistant that reads skills: copy `skills/file-your-taxes` into its skills folder. The skill reaches
-Terminal Tax through its MCP tools when they are connected, or through the bundled Python helper
-(`scripts/terminal_tax_mcp.py`, standard library only) or plain HTTPS requests. The endpoint is
+Terminal Tax through its MCP tools when they are connected, or through plain HTTPS requests. The endpoint is
 `https://mcp.terminal.tax/v1/hosted-mcp`; it needs no account, key or login.
 
 Then ask your assistant: "Help me file my taxes."
@@ -75,7 +74,6 @@ The return figures you give your assistant are also handled under your assistant
 ## Contents
 
 - `skills/file-your-taxes/SKILL.md`: the skill.
-- `skills/file-your-taxes/scripts/terminal_tax_mcp.py`: a small helper that calls the three Terminal Tax tools.
 - `.claude-plugin/`, `gemini-extension.json`, `GEMINI.md`, `AGENTS.md`: install manifests and pointers for each
   assistant.
 

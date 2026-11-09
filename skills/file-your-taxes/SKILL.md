@@ -89,19 +89,7 @@ The endpoint is `https://mcp.terminal.tax/v1/hosted-mcp`, a remote MCP server (S
 account, key or login.
 
 - If the `terminal-tax` MCP tools are connected (this plugin or extension connects them), call them directly.
-- Otherwise use the helper bundled in this skill's own directory (`<skill dir>/scripts/terminal_tax_mcp.py`; in a
-  Claude Code plugin, `${CLAUDE_PLUGIN_ROOT}/skills/file-your-taxes/scripts/terminal_tax_mcp.py`). It needs only
-  Python 3:
-
-  ```sh
-  python3 <skill dir>/scripts/terminal_tax_mcp.py create
-  python3 <skill dir>/scripts/terminal_tax_mcp.py schema <handle>
-  python3 <skill dir>/scripts/terminal_tax_mcp.py schema <handle> --template <id>
-  python3 <skill dir>/scripts/terminal_tax_mcp.py schema <handle> --section <name>
-  python3 <skill dir>/scripts/terminal_tax_mcp.py submit <handle> <packet.json> <packetSchemaSha256>
-  ```
-
-- Or send JSON-RPC `tools/call` POSTs yourself:
+- Otherwise send JSON-RPC `tools/call` POSTs yourself:
 
   ```sh
   curl -s https://mcp.terminal.tax/v1/hosted-mcp \
